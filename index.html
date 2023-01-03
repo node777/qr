@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR</title>
+    <style>
+        :root{
+            --color1: rgb(255 232 187);
+            --color2: rgb(96 92 66);
+        }
+        body{
+            background-color: rgb(235, 235, 235);
+            margin: 0;
+            font-family: up;
+        }
+        content{
+            position: absolute;
+            left: 48px;
+            top: 48px;
+            right: 0;
+            bottom: 0;
+            background-color: var(--color2);
+        
+        }
+        header{
+            height: 48px;
+            width: 100%;
+            background-color: var(--color1);
+            margin: 0;
+            text-align: center;
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            font-size: 24px;
+        }
+        .title{
+            font-size: 28px;
+            text-align: center;
+        }
+        .sidebar{
+            width: 48px;
+            height: 100vh;
+            background-color: var(--color1);
+            margin-top: -20px;
+        }
+        .sidebar .tool{
+            width: 32px;
+            margin: 20px 8px;
+        }
+        .sidebar .tool .label{
+            display: none;
+            position: absolute;
+            margin: 4px 8px;
+            background-color: black;
+            color: white;
+            border-radius: 0 4px 4px 0;
+            z-index: 10;
+            font-size: larger;
+            padding: 8px;
+        }
+        .sidebar .tool:hover .label{
+            display: initial;
+        }
+        .sidebar .tool img{
+            width: 100%;
+        }
+        .dashboard{
+            display: flex;
+
+        }
+        .dashboard>*{
+            flex: 30%;
+        }
+        .section{
+            border: 1px solid black;
+            margin: 48px;
+            height: calc(50vh - 182px);
+            padding: 32px;
+            background-color: rgb(235, 235, 235);
+        }
+        @font-face {
+            font-family: up;
+            src: url("./assets/upheavtt.ttf");
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Facilitating and Funding Community Driven Initiatives
+
+    </header>
+    <div class="sidebar">
+        <div class="button tool">
+            <img src="./assets/icons/id.png" />
+            <div class="label">ID</div>
+        </div>
+        <div class="button tool">
+            <img src="./assets/icons/news.png" />
+            <div class="label">News</div>
+        </div>
+        <div class="button tool">
+            <img src="./assets/icons/collab.png" />
+            <div class="label">PoL Collab</div>
+        </div>
+        <div class="button tool">
+            <img src="./assets/icons/chat.png" />
+            <div class="label">W2W Chat</div>
+        </div>
+        <div class="button tool">
+            <img src="./assets/icons/connect.png" />
+            <div class="label">PPL Connections</div>
+        </div>
+        <div class="button tool">
+            <img src="./assets/icons/forum.png" />
+            <div class="label">Forum</div>
+        </div>
+        <div class="button tool">
+            <img src="./assets/icons/tools.png" />
+            <div class="label">Tools/Dapps</div>
+        </div>
+        <div class="button tool">
+            <img src="./assets/icons/exchange.png" />
+            <div class="label">Exchange</div>
+        </div>
+        <div class="button tool">
+            <img src="./assets/icons/mint.png" />
+            <div class="label">Mint</div>
+        </div>
+        <div class="button tool">
+            <img src="./assets/icons/patent.png" />
+            <div class="label">Patents</div>
+        </div>
+        <div class="button tool">
+            <img src="./assets/icons/airdrop.png" />
+            <div class="label">Airdrops</div>
+        </div>
+        <div class="button tool">
+            <img src="./assets/icons/dao.png" />
+            <div class="label">DAO Tools</div>
+        </div>
+        <div class="button tool">
+            <img src="./assets/icons/crowdfunding.png" />
+            <div class="label">Crowdfunding</div>
+        </div>
+        <div class="button tool">
+            <img src="./assets/icons/content.png" />
+            <div class="label">Content Creation Tools</div>
+        </div>
+        <div class="button tool">
+            <img src="./assets/icons/voting.png" />
+            <div class="label">Voting Booth</div>
+        </div>
+    </div>
+    <content>
+        <div class="dashboard">
+            <div class="section">
+                <div class="title">Status Updates</div>
+                <div class="update">Update 1</div>
+                <div class="update">Update 2</div>
+                <div class="update">Update 3</div>
+            </div>
+            <div class="section">
+                <div class="title">Markets</div>
+                <div class="update">Market 1</div>
+                <div class="update">Market 2</div>
+                <div class="update">Market 3</div>
+            </div>
+            <div class="section">
+                <div class="title">Highlights</div>
+                <div class="update">Highlight 1</div>
+                <div class="update">Highlight 2</div>
+                <div class="update">Highlight 3</div>
+            </div>
+        </div>
+        <div class="dashboard">
+            <div class="section">
+                <div class="title">Something</div>
+                <div class="update">Update 1</div>
+                <div class="update">Update 2</div>
+                <div class="update">Update 3</div>
+            </div>
+            <div class="section">
+                <div class="title">Something Else</div>
+                <div class="update">Update 1</div>
+                <div class="update">Update 2</div>
+                <div class="update">Update 3</div>
+            </div>
+            <div class="section">
+                <div class="title">Notifications</div>
+                <div class="update">Notification 1</div>
+                <div class="update">Notification 2</div>
+                <div class="update">Notification 3</div>
+            </div>
+        </div>
+    </content>
+</body>
+</html>
