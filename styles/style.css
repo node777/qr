@@ -40,3 +40,12 @@ h1{
     font-family: retro;
     src: url("../fonts/retro_computer.ttf");
 }
+
+@media (orientation: portrait) {
+    .flex{
+      display: block;
+    }
+    img{
+        width: 100%;
+    }
+  }

@@ -74,3 +74,9 @@ header {
   font-family: up;
   src: url("../fonts/upheavtt.ttf");
 }
+
+@media (orientation: portrait) {
+  .flex{
+    display: block;
+  }
+}
