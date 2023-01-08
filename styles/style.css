@@ -1,0 +1,42 @@
+:root{
+    --color1: #f6f0f0;
+    --colorMilk: #e6e8ea;
+}
+body{
+    font-family: retro;
+    background-color: var(--color1);
+}
+.milk{
+    
+    background-color: var(--colorMilk);
+}
+.flex{
+    display: flex;
+}
+.flex>div{
+    flex: 1;
+    text-align: center;
+}
+.border{
+    border: 2px solid black;
+}
+.button{
+    background-color: black;
+    color: white;
+    margin: 16px auto;
+    padding: 20px;
+    width: 50%;
+    cursor: pointer;
+    text-align: center;
+}
+
+h1{
+    font-family: retro;
+    width: 100%;
+    text-align: center;
+}
+
+@font-face {
+    font-family: retro;
+    src: url("../fonts/retro_computer.ttf");
+}
